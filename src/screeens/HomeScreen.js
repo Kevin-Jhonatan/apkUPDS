@@ -1,6 +1,5 @@
 import React from 'react-native';
 import {
-  StyleSheet,
   View,
   Text,
   SafeAreaView,
@@ -8,6 +7,9 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import styles from '../styles/screens/HomeScreen.component.style';
+import Notification from '../assets/icons/home/notification';
+import Ligth from '../assets/icons/home/ligth';
+import Emoji from '../assets/icons/home/👋';
 
 const HomeScreen = () => {
   return (
@@ -15,10 +17,12 @@ const HomeScreen = () => {
       {/* Container iconos */}
       <View style={styles.containerIconos}>
         <Text style={styles.text}>Hola, Kevin</Text>
+        <Notification />
+        <Emoji />
       </View>
       {/* Container anuncios */}
       <View style={styles.containerAnuncio}>
-        <Text style={styles.test}>Hola</Text>
+        <Text style={styles.test}>Hola Anuncio</Text>
       </View>
       {/* Container Eventos */}
       <ScrollView style={styles.containerEvento}>
